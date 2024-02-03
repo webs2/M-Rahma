@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Business Card</title>
+</head>
+<body>
+    <div id="loader" class="loader">
+        <img src="pic/mr1.png" alt="Logo" class="logo" id="logoZoom">
+    </div>
+
+    <div id="content" class="content hidden">
+        <div class="background">
+            <img src="pic/bac3.png" alt="Background Image" class="background-image">
+            <div class="center-rectangle">
+            <div class="rectangle-container">
+                <img src="pic/bac3++.png" alt="Transparent Rectangle" class="rectangle-image">
+                <div class="dark-mini-bar">
+                <p>Follow us on social media</p>
+            </div>
+                <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=100063781320733&mibextid=ZbWKwL" class="social-link hidden" id="facebookLink"><img src="pic/fb.png" alt="Facebook"><span class="logo-label">Facebook</span></a>
+                <a href="https://www.instagram.com/mercerie__rahma?igsh=aDNjcG9mdjZmZ2M4" class="social-link hidden" id="instagramLink"><img src="pic/insta.png" alt="Instagram"><span class="logo-label">Instagram</span></a>
+                <a href="https://www.tiktok.com/@mercerie_rahma?_t=8jZxEHv0KU1&_r=1" class="social-link hidden" id="tiktokLink"><img src="pic/tik.png" alt="TikTok"><span class="logo-label">TikTok</span></a>
+                <a href="https://maps.app.goo.gl/D3Q1RtjjoGk7zprBA" class="social-link hidden" id="mapsLink"><img src="pic/loc.png" alt="Maps"><span class="logo-label">Location</span></a>
+            </div>
+            </div>
+            
+        </div>
+        </div>
+        <div class="dark-bar">
+            <p>Connect with us on social media</p>
+            <p>Follow us and get updates delivered to your favorite social media channel.</p>
+        </div></div>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    // Simulate loading time
+    setTimeout(function() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("content").style.display = "block";
+        document.getElementById("logoZoom").classList.remove("zoom-in");
+        document.querySelector(".background").style.display = "block";
+        document.querySelector(".background-image").style.display = "block";
+        document.querySelector(".social-links").classList.remove("hidden");
+        var socialLinks = document.querySelectorAll(".social-link");
+        for (var i = 0; i < socialLinks.length; i++) {
+            socialLinks[i].classList.toggle("visible");
+        }
+    }, 5000);
+});
+</script>
+</body>
+</html>
