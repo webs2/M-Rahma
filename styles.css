@@ -218,8 +218,8 @@ body {
     animation: zoomInOut 2s infinite alternate, shine 2s infinite;
 }
     .share-button img {
-    width: 30px; /* Adjust the width of the share icon as needed */
-    height: 30px; /* Adjust the height of the share icon as needed */
+    width: 40px; /* Adjust the width of the share icon as needed */
+    height: 40px; /* Adjust the height of the share icon as needed */
 }
     @keyframes zoomInOut {
     0% {
