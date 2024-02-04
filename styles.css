@@ -43,6 +43,12 @@ body {
     height: auto;
     filter: blur(5px);
 }
+@media only screen and (max-width: 600px) {
+.background-image {
+    width: 100%;
+    height: auto;
+    filter: blur(2px); /* Adjust the blur effect for smaller screens */
+    }}
 .center-rectangle {
     position: absolute;
     top: 50%;
@@ -54,7 +60,7 @@ body {
 .rectangle-container {
     position: relative;
     border-radius: 20px; 
-    height: 600px;
+    height: 700px;
     z-index: 2;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Adjust shadow properties as needed */
 }
@@ -112,4 +118,90 @@ body {
 .visible {
     display: inline-block; /* Use !important to override the 'hidden' class */
 }
+@media only screen and (max-width: 600px) {
+.center-rectangle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+    .rectangle-container {
+    position: relative;
+    border-radius: 20px; 
+    height: 180px;
+    z-index: 2;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Adjust shadow properties as needed */
+}
+    .rectangle-image {
+    width: 200px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    margin: 10px;
+    padding: 10px;
+}
+    .dark-mini-bar {
+    background-color: #8B5927;
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 8px;
+}
+    .dark-bar {
+    background-color: #8B5927;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    visibility: hidden;
+}
 
+.dark-bar p {
+    margin: 10px 0;
+    font-size: 8px;
+}
+/* ... (your existing CSS code) ... */
+.dark-bar p {
+    margin: 10px 0;
+    font-size: 8px;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    gap: 0px;
+}
+
+.social-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #8B5927;
+    font-size: 8px;
+    position: relative;
+}
+
+.social-link img {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 5px;
+}
+
+.logo-label {
+    display: block;
+    font-weight: bold;
+}
+
+.visible {
+    display: inline-block;
+}
+
+.social-link:not(:last-child)::after {
+    content: "";
+    display: block;
+    width: 500%;
+    height: 2px;
+    background-color: #8B5927;
+    margin-top: 5px;
+}
+}
