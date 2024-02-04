@@ -144,7 +144,7 @@ body {
     color: #fff;
     padding: 10px;
     border-radius: 20px;
-    font-size: 10px;
+    font-size: 14px;
 }
     .dark-bar {
     background-color: #8B5927;
@@ -204,4 +204,24 @@ body {
     background-color: #8B5927;
     margin-top: 5px;
 }
+
+/* ... (your existing CSS code) ... */
+
+.share-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+     padding: 0; /* Remove padding to eliminate extra space */
+    background: none; /* Remove background color */
+    border: none; 
+    cursor: pointer;
+}
+
+
+
+/* ... (your existing CSS code) ... */
+
+
+/* ... (your existing CSS code) ... */
+
 }
