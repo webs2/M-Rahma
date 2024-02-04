@@ -14,7 +14,7 @@ body {
 .loader .logo {
     max-width: 200px;
     max-height: 200px;
-    animation: zoomIn 2s ease-in-out forwards; /* Adjust the animation duration as needed */
+    animation: zoomIn 4s ease-in-out forwards; /* Adjust the animation duration as needed */
 }
 
 @keyframes zoomIn {
