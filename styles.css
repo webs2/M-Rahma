@@ -134,8 +134,8 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Adjust shadow properties as needed */
 }
     .rectangle-image {
-    width: 200px; /* Adjust the width as needed */
-    height: 100px; /* Adjust the height as needed */
+    width: 270px; /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
     margin: 10px;
     padding: 10px;
 }
@@ -144,7 +144,7 @@ body {
     color: #fff;
     padding: 10px;
     border-radius: 20px;
-    font-size: 8px;
+    font-size: 10px;
 }
     .dark-bar {
     background-color: #8B5927;
