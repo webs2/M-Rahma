@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Your Business Card</title>
+    <title>Mercerie Rahma</title>
 </head>
 <body>
     <div id="loader" class="loader">
@@ -27,9 +27,14 @@
                 <a href="https://maps.app.goo.gl/D3Q1RtjjoGk7zprBA" class="social-link hidden" id="mapsLink"><img src="pic/loc.png" alt="Maps"><span class="logo-label">Location</span></a>
             </div>
             </div>
+                
+
             
         </div>
         </div>
+        <button class="share-button" onclick="shareContent()">
+    <img src="pic/share+.png" alt="Share"></button>
+
         <div class="dark-bar">
             <p>Connect with us on social media</p>
             <p>Follow us and get updates delivered to your favorite social media channel.</p>
@@ -51,6 +56,20 @@
         }
     }, 5000);
 });
+          function shareContent() {
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Mercerie Rahma',
+                    text: 'Check out my site!',
+                    url: window.location.href
+                })
+                .then(() => console.log('Successful share'))
+                .catch((error) => console.log('Error sharing:', error));
+            } else {
+                // Fallback for browsers that do not support Web Share API
+                alert('Web Share API is not supported on this browser.');
+            }
+        }
 </script>
 </body>
 </html>
